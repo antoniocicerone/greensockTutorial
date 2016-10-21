@@ -1,4 +1,4 @@
-// SELETTORI
+// SELETTORI JAVASCRIPT
 
 // seleziona elemento per id
 var obj1 = document.getElementById('ob1');
@@ -21,7 +21,7 @@ var lastItem = document.getElementByClassName('list')[0].lastElementChild;
 // END SELETTORI
 
 
-// ANIMAZIONI tweenlite + cssplugin(con anim css)
+// ANIMAZIONI tweenlite + cssplugin(con anim css) * TweenMax nessun plugin
 //1 è un secondo .to dalla posizione iniziale a
 TweenLite.to(element, 1, {width: 100});
 //posizione
@@ -70,7 +70,7 @@ function onUpdate() {
 // fine eventi
 
 
-// ANIMAZIONE DI MOLTI ELEMENTI
+// ANIMAZIONE DI MOLTI ELEMENTI TimelineLite
 
 var obj1 = document.getElementById('ob1'),
     obj2 = document.getElementById('ob2'),
@@ -91,11 +91,12 @@ tl
 	
 
 //.staggerTo animazione multipla a bt N.B vale anche .staggerFrom e staggerFromTo
-// con cycle va a intermittenza
+// con cycle si alternano tra certi valori
 
-//3 è il rirardo, vedi +=1 ???, vedi pure .add('.classe')
+//3 è il rirardo, vedi +=1
+
+
 // END ANIMAZIONE DI MOLTI ELEMENTI
-
 
 FINO A LEZIONE 8 DI 11
 
